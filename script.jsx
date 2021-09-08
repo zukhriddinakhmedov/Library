@@ -23,6 +23,7 @@ class Media {
     getAverageRating() {
         let ratingsSum = this.ratings.reduce((currentSum, rating) =>
             currentSum + rating, 0)
+        return ratingsSum / this.ratings.length
     }
     addRating(rating) {
         this.ratings.push(rating)
