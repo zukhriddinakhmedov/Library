@@ -24,4 +24,7 @@ class Media {
         let ratingsSum = this.ratings.reduce((currentSum, rating) =>
             currentSum + rating, 0)
     }
+    addRating(rating) {
+        this.ratings.push(rating)
+    }
 }
